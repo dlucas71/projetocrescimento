@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class='contact-form'>
+    <form method="post">        
+        <h3>
+         <span class="glyphicon glyphicon-envelope contato" aria-hidden="true"></span>
+        Entre em Contato</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" name="txtName" class="form-control" placeholder="Seu Nome *" value=""/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="txtEmail" class="form-control" placeholder="Seu Email *" value=""/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="txtPhone" class="form-control" placeholder="Celular *" value=""/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="btnSubmit" class="btnContact" value="Enviar Mensagem"/>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Escreva sua  Mensagem *"
+                                  style="width: 100%; height: 150px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}
