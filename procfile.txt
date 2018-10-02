@@ -1,0 +1,4 @@
+web: gunicorn projetoessencia.wsgi --log-file =
+
+pip install gunicorn
+pip install django-heroku
